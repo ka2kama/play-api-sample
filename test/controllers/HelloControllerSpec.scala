@@ -6,7 +6,9 @@ import play.api.libs.json.Json
 import play.api.test.Helpers._
 import play.api.test._
 
-class HelloControllerSpec extends PlaySpec with GuiceOneAppPerTest {
+class HelloControllerSpec
+    extends PlaySpec
+    with GuiceOneAppPerTest {
 
   "HelloController GET" should {
 
