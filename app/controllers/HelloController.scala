@@ -10,9 +10,8 @@ class HelloController @Inject()(cc: ControllerComponents)
   def hello(): Action[AnyContent] = Action(Ok("Hello World"))
 
   def helloJson(): Action[AnyContent] = Action {
-    val json: JsValue = Json.obj(
-      "hello"-> "world",
-      "language" -> "scala")
+    val json: JsValue =
+      Json.obj("hello" -> "world", "language" -> "scala")
 
     Ok(json)
   }
