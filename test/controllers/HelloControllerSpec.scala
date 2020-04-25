@@ -30,7 +30,9 @@ class HelloControllerSpec
 
       status(home) mustBe OK
       contentType(home) mustBe Some("application/json")
-      contentAsJson(home) mustBe Json.obj("hello"-> "world", "language" -> "scala")
+      contentAsJson(home) mustBe Json.obj(
+        "hello"-> "world",
+        "language" -> "scala")
     }
   }
 }
